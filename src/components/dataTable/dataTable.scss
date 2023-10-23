@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+.data-table {
+   .data-grid {
+      background: $soft-bg;
+      padding: 20px;
+      border: none;
+      margin-top: 20px;
+      color: white;
+   }
+   img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+   }
+   .action {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+         width: 20px;
+         height: 20px;
+         cursor: pointer;
+      }
+   }
+   .MuiDataGrid-booleanCell[data-value="false"] {
+      color: tomato !important;
+   }
+   .MuiDataGrid-booleanCell[data-value="true"] {
+      color: limegreen !important;
+   }
+   .MuiDataGrid-toolbarContainer {
+      flex-direction: row-reverse;
+   }
+   .MuiTablePagination-root {
+      color: white;
+   }
+   .MuiCheckbox-root,
+   .MuiIconButton-root {
+      color: white;
+   }
+   .MuiInputBase-root {
+      color: white;
+      border-bottom: 2px solid white;
+   }
+   .MuiDataGrid-cell.MuiDataGrid-cell--editing {
+      background-color: $main-bg !important;
+   }
+}
